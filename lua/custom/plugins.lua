@@ -59,6 +59,11 @@ local plugins = {
       "rcarriga/nvim-notify",
     },
   },
+  { "elentok/format-on-save.nvim", event = "BufWritePre",
+    config = function()
+      require "custom.configs.format_on_save"
+    end,
+  },
 
   -- To make a plugin not be loaded
   -- {
