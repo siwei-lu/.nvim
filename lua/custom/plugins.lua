@@ -59,10 +59,23 @@ local plugins = {
       "rcarriga/nvim-notify",
     },
   },
-  { "elentok/format-on-save.nvim", event = "BufWritePre",
+  {
+    "elentok/format-on-save.nvim",
+    event = "BufWritePre",
     config = function()
       require "custom.configs.format_on_save"
     end,
+  },
+  {
+    "NeogitOrg/neogit",
+    event = "BufRead",
+    dependencies = {
+      "nvim-lua/plenary.nvim", -- required
+      "nvim-telescope/telescope.nvim", -- optional
+      "sindrets/diffview.nvim", -- optional
+      "ibhagwan/fzf-lua", -- optional
+    },
+    config = true,
   },
 
   -- To make a plugin not be loaded

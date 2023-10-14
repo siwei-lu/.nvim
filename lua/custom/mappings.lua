@@ -7,14 +7,17 @@ M.general = {
 
     -- quit
     ["<leader>q"] = { "<cmd> qa! <CR>", "Quit" },
+
+    -- neogit
+    ["<leader>gg"] = { "<cmd> Neogit <CR>", "Open Neogit" },
   },
   v = {
-    [">"] = { ">gv", "indent"},
+    [">"] = { ">gv", "indent" },
   },
   i = {
     -- save
     ["<C-s>"] = { "<Esc><cmd> w <CR>", "Save file" },
-  }
+  },
 }
 
 -- more keybinds!
