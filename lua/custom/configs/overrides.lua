@@ -56,4 +56,5 @@ M.nvimtree = {
   },
 }
 
+
 return M

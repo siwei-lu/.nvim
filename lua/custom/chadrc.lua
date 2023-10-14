@@ -17,4 +17,6 @@ M.plugins = "custom.plugins"
 -- check core.mappings for table structure
 M.mappings = require "custom.mappings"
 
+vim.o.laststatus = 0
+
 return M
