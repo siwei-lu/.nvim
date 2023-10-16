@@ -10,6 +10,9 @@ M.general = {
 
     -- neogit
     ["<leader>gg"] = { "<cmd> Neogit <CR>", "Open Neogit" },
+
+    -- redo
+    ["<S-u>"] = { "<cmd> redo <CR>", "Redo" },
   },
   v = {
     [">"] = { ">gv", "indent" },
